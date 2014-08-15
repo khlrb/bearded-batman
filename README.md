@@ -1,4 +1,9 @@
 bearded-batman
 ==============
 
-checks a bunch of services for a specific username
+Usage:
+------
+
+If you want to know whether a username is still free, just run:
+
+`$ ./bearded-batman [name]`
