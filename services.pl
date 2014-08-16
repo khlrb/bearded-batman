@@ -12,6 +12,9 @@ our %services = (
 	"twitter" => sub { return head("http://twitter.com/@_"); },
 	"tumblr" => sub { return head("http://@_.tumblr.com"); },
 	"soundcloud" => sub { return head("http://soundcloud.com/@_"); },
-	"pinterest" => sub { return head("http://www.pinterest.com/@_"); }
+	"pinterest" => sub { return head("http://www.pinterest.com/@_"); },
+	"github" => sub { return head("http://github.com/@_"); },
+	"steam" => sub { return head("http://steamcommunity.com/id/@_"); },
+	"soup.io" => sub { return head("http://@_.soup.io"); }
 );
 
