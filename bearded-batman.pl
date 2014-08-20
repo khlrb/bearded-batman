@@ -2,6 +2,8 @@
 
 require "services.pl";
 
+use Term::ANSIColor qw(:constants);
+use Text::Table;
 
 if($#ARGV != 0) {
 	print "Usage: ./bearded-batman.pl [username]\n";
@@ -10,13 +12,17 @@ if($#ARGV != 0) {
 
 my $name = $ARGV[0];
 
-while(my ($key, $value) = each %services) {
-	print "$key: ";
+my $table = Text::Table->new();
 
+print "fetching data...\n";
+
+while(my ($key, $value) = each %services) {
 	if($value->($name)) {
-		print "taken\n";
+		$table->add($key, RED, "taken", RESET);
 	}
 	else {
-		print "available\n";
+		$table->add($key, GREEN, "available", RESET);
 	}
 }
+
+print $table;
