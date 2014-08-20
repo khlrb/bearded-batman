@@ -1,8 +1,5 @@
 #!/usr/bin/perl
 
-use warnings;
-
-
 require "services.pl";
 
 
