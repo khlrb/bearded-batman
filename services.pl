@@ -33,6 +33,8 @@ our %services = (
 	"steam" => sub { return head("http://steamcommunity.com/id/@_"); },
 	"soup.io" => sub { return head("http://@_.soup.io"); },
 	"bitbucket" => sub { return head("https://bitbucket.org/@_"); },
+	"ello" => sub { return head("https://ello.co/@_"); },
+	"Raptr" => sub { return head("https://raptr.com/@_"); },
 	"skype" => sub { return check_skype(@_); }
 );
 
