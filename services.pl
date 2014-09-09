@@ -35,6 +35,7 @@ our %services = (
 	"bitbucket" => sub { return head("https://bitbucket.org/@_"); },
 	"ello" => sub { return head("https://ello.co/@_"); },
 	"Raptr" => sub { return head("https://raptr.com/@_"); },
+	"bitbucket" => sub { return head("https://bitbucket.org/@_"); },
 	"skype" => sub { return check_skype(@_); }
 );
 
