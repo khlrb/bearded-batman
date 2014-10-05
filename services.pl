@@ -17,9 +17,11 @@ sub check_skype {
 }
 
 our %services = (
+	"gutefrage.net" => sub { return head("http://gutefrage.net/nutzer/@_"); },
 	"about.me" => sub { return head("http://about.me/@_"); },
 	"advogato.org" => sub { return head("http://www.advogato.org/person/@_"); },
 	"deviantART" => sub { return head("http://@_.deviantart.com"); },
+	"App.net" => sub { return head("https://alpha.app.net/@_"); },
 	"flickr" => sub { return head("http://flickr.com/photos/@_"); },
 	"foursquare" => sub { return head("http://foursquare.com/@_"); },
 	"instagram" => sub { return head("http://instagram.com/@_"); },
