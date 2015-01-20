@@ -42,6 +42,8 @@ our %services = (
 	"ello" => sub { return head("https://ello.co/@_"); },
 	"Raptr" => sub { return head("https://raptr.com/@_"); },
 	"bitbucket" => sub { return head("https://bitbucket.org/@_"); },
+	"twitch" => sub { return head("https://twitch.tv/@_"); },
+	"500px" => sub { return head("https://500px.com/@_"); },
 	"skype" => sub { return check_skype(@_); }
 );
 
